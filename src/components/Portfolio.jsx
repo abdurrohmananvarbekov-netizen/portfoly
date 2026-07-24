@@ -6,7 +6,7 @@ const works = [
     imgAfter: "/image3.2.png",
   },
   {
-    name: "Mahsulot 2",
+    name: "Kiyimlar",
     category: "Product Design",
     imgBefore: "/image4.1.png",
     imgAfter: "/image4.2.png",
@@ -63,7 +63,7 @@ function Portfolio() {
                 <img
                   src={work.imgBefore}
                   alt={work.name + " oddiy holat"}
-                  className="w-full h-full object-contain p-4"
+                  className="w-full h-full object-cover"
                 />
                 <div className="absolute top-3 left-3 bg-black/70 backdrop-blur-md px-4 py-1.5 rounded-full text-white font-medium text-sm shadow-lg">
                   Oddiy holat
@@ -76,7 +76,7 @@ function Portfolio() {
                 <img
                   src={work.imgAfter}
                   alt={work.name + " premium holat"}
-                  className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-700 ease-out"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
                 />
                 <div className="absolute top-3 left-3 bg-purple-500/90 backdrop-blur-md px-4 py-1.5 rounded-full border border-purple-400/50 text-white font-medium text-sm z-20 shadow-[0_0_15px_rgba(139,92,246,0.5)]">
                   Premium holat ✨

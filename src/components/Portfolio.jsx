@@ -1,6 +1,6 @@
 const works = [
   {
-    name: "Parfyumeriya",
+    name: "Parfyumeriyalar",
     category: "Product Design",
     imgBefore: "/image3.1.png",
     imgAfter: "/image3.2.png",
@@ -12,13 +12,13 @@ const works = [
     imgAfter: "/image4.2.png",
   },
   {
-    name: "Mahsulot 3",
+    name: "Aksessuarlar",
     category: "Product Design",
     imgBefore: "/image1.1.png",
     imgAfter: "/image1.2.png",
   },
   {
-    name: "Mahsulot 4",
+    name: "Bolalar oyinchoqlari",
     category: "Product Design",
     imgBefore: "/image2.1.png",
     imgAfter: "/image2.2.png",
@@ -59,11 +59,11 @@ function Portfolio() {
             <div className="grid grid-cols-1 min-[500px]:grid-cols-2 gap-4 sm:gap-6">
 
               {/* BEFORE — oq fon */}
-              <div className="relative rounded-2xl overflow-hidden bg-white border border-gray-200 aspect-square min-[500px]:aspect-auto min-[500px]:h-[300px] md:h-[360px]">
+              <div className="relative rounded-2xl overflow-hidden bg-white border border-gray-200" style={{ aspectRatio: '210/297' }}>
                 <img
                   src={work.imgBefore}
                   alt={work.name + " oddiy holat"}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain"
                 />
                 <div className="absolute top-3 left-3 bg-black/70 backdrop-blur-md px-4 py-1.5 rounded-full text-white font-medium text-sm shadow-lg">
                   Oddiy holat
@@ -71,12 +71,12 @@ function Portfolio() {
               </div>
 
               {/* AFTER — premium */}
-              <div className="relative rounded-2xl overflow-hidden border border-purple-500/30 shadow-[0_0_30px_rgba(139,92,246,0.15)] group bg-black aspect-square min-[500px]:aspect-auto min-[500px]:h-[300px] md:h-[360px]">
+              <div className="relative rounded-2xl overflow-hidden border border-purple-500/30 shadow-[0_0_30px_rgba(139,92,246,0.15)] group bg-black" style={{ aspectRatio: '210/297' }}>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent z-10"></div>
                 <img
                   src={work.imgAfter}
                   alt={work.name + " premium holat"}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+                  className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-700 ease-out"
                 />
                 <div className="absolute top-3 left-3 bg-purple-500/90 backdrop-blur-md px-4 py-1.5 rounded-full border border-purple-400/50 text-white font-medium text-sm z-20 shadow-[0_0_15px_rgba(139,92,246,0.5)]">
                   Premium holat ✨
